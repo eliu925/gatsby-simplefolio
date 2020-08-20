@@ -46,7 +46,7 @@ export const projectsData = [
     title: 'Bubble Destroyer',
     info: '',
     info2:
-      'During the 3-day hackathon, I helped design the game environment and implemented game controls and key mechanics of the original game such as collision between different object groups.',
+      'During the 3-day hackathon, I co-developed the game environment and implemented game controls and key mechanics of the original game such as collision between different object groups.',
     url: '',
     repo: 'https://github.com/Team-Bubble-Destroyers/BubbleDestroyer', // if no repo, the button will not show up
   },

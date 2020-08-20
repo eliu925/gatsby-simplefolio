@@ -43,15 +43,16 @@ const Projects = () => {
                     <div className="project-wrapper__text">
                       <h3 className="project-wrapper__text-title">{title || 'Project Title'}</h3>
                       <div>
-                        {info || (
-                          <p>
-                            <a href="https://www.miniclip.com/games/bubble-trouble/en/">
-                              {' '}
-                              Bubble Trouble{' '}
-                            </a>{' '}
-                            clone created with Phaser 3 framework.
-                          </p>
-                        )}
+                        <p>
+                          {info || (
+                            <p>
+                              <a href="https://www.miniclip.com/games/bubble-trouble/en/">
+                                Bubble Trouble{' '}
+                              </a>
+                              clone created with Phaser 3 framework.
+                            </p>
+                          )}
+                        </p>
                         <p className="mb-4">{info2 || ''}</p>
                         <p className="mb-4">{info3 || ''}</p>
                       </div>
