@@ -43,7 +43,7 @@ const Projects = () => {
                     <div className="project-wrapper__text">
                       <h3 className="project-wrapper__text-title">{title || 'Project Title'}</h3>
                       <div>
-                        <p>
+                        <p className="mb-4">
                           {info || (
                             <p>
                               <a href="https://www.miniclip.com/games/bubble-trouble/en/">
