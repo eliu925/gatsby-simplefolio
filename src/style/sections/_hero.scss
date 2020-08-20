@@ -17,26 +17,32 @@
 
   // If you want to set a background image on the hero section, uncomment these with yout custom image
 
-  /* background: url("/src/assets/[your-image].png");
+  background: url('https://scontent-lga3-1.xx.fbcdn.net/v/t31.0-8/15196047_10154150840641687_3093045152432072962_o.jpg?_nc_cat=104&_nc_sid=e3f864&_nc_ohc=4t9QbIuTResAX_c_rH0&_nc_ht=scontent-lga3-1.xx&oh=ab85cce7bfb190bd3a44fb5634ae68b4&oe=5F63079D');
   background-position: center;
-  background-size: cover; */
+  background-size: cover;
 
   @include respond(phone) {
     padding: 0rem $default-font-size;
   }
-
+  .title {
+    font-size: 5.6rem;
+    font-weight: 700;
+    margin-bottom: 3.2rem;
+    color: rgb(224, 220, 220);
+  }
   .hero-title {
     font-size: 5.6rem;
     font-weight: 700;
     margin-bottom: 3.2rem;
     text-align: left;
+    color: rgb(224, 220, 220);
 
     @include respond(tab-land) {
       font-size: 4rem;
     }
     @include respond(tab-port) {
       font-size: 3.6rem;
-      text-align: center;
+      text-align: left;
     }
     @include respond(phone) {
       font-size: 3.5rem;

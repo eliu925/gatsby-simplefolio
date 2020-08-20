@@ -1,6 +1,7 @@
 import React, { useContext, useState, useEffect } from 'react';
 import { Container } from 'react-bootstrap';
 import Fade from 'react-reveal/Fade';
+import Typing from 'react-typing-animation';
 import { Link } from 'react-scroll';
 import PortfolioContext from '../../context/context';
 
@@ -24,15 +25,32 @@ const Header = () => {
   return (
     <section id="hero" className="jumbotron">
       <Container>
-        <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={500} distance="30px">
+        <Typing speed={70} className="hero-title">
           <h1 className="hero-title">
-            {title || 'Hi, my name is'}{' '}
-            <span className="text-color-main">{name || 'Your Name'}</span>
+            {title || 'Hello World!'}
+            <Typing.Delay ms={1000} />
             <br />
-            {subtitle || "I'm the Unknown Developer."}
+
+            {'My name is '}
+            <span className="title-text">{name || 'Erica Liu.'}</span>
+            <br />
+            {subtitle || "I'm a "}
+            <span className="title-text">
+              Software Engineer.
+              <Typing.Delay ms={1000} />
+              <Typing.Backspace count={18} />
+              Veterinary Technician.
+              <Typing.Delay ms={1000} />
+              <Typing.Backspace count={22} />
+              Noodle Enthusiast.
+              <Typing.Delay ms={1000} />
+              <Typing.Backspace count={21} />
+              the Worst Gamer.
+            </span>
           </h1>
-        </Fade>
-        <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={1000} distance="30px">
+        </Typing>
+
+        <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={10000} distance="30px">
           <p className="hero-cta">
             <span className="cta-btn cta-btn--hero">
               <Link to="about" smooth duration={1000}>

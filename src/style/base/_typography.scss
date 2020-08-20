@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Merriweather:400,700&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap');
 
 h1 {
@@ -6,7 +7,7 @@ h1 {
 
 p,
 a {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Merriweather', sans-serif;
   font-size: $default-font-size;
 }
 
@@ -38,10 +39,17 @@ a:hover {
   color: $dark-blue-text !important;
 }
 
+.title-text {
+font-family: 'Montserrat' sans-serif;
+color: rgb(68, 61, 61);
+}
+
 .text-color-main {
   background-image: linear-gradient(135deg, $primary-color 0%, $secondary-color 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: .2px darkblue;
+  
 
   // Responsive text purple style
   @include respond(phone) {
