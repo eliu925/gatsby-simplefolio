@@ -34,7 +34,7 @@
     font-size: 5.6rem;
     font-weight: 700;
     margin-bottom: 3.2rem;
-    text-align: left;
+    text-align: center;
     color: rgb(224, 220, 220);
 
     @include respond(tab-land) {
@@ -45,16 +45,18 @@
       text-align: left;
     }
     @include respond(phone) {
-      font-size: 3.5rem;
+      font-size: 2.3 rem;
       line-height: 1.5;
+      text-align: left;
     }
     @include respond(phone-xs) {
-      font-size: 2.8rem;
+      font-size: 2rem;
     }
   }
 
   .hero-cta {
     display: flex;
+    justify-content: center;
 
     @include respond(tab-port) {
       justify-content: center;
