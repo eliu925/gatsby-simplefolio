@@ -21,7 +21,7 @@ export const aboutData = {
   paragraphOne: '',
   paragraphTwo: '',
   paragraphThree: '',
-  resume: 'https://www.resumemaker.online/es.php', // if no resume, the button will not show up
+  resume: '', // if no resume, the button will not show up
 };
 
 // PROJECTS DATA
@@ -58,18 +58,13 @@ export const projectsData = [
 // CONTACT DATA
 export const contactData = {
   cta: '',
-  btn: '',
-  email: '',
+  btn: 'Email me!',
+  email: 'eliu925@gmail.com',
 };
 
 // FOOTER DATA
 export const footerData = {
   networks: [
-    {
-      id: nanoid(),
-      name: 'medium',
-      url: 'https://medium.com/@ericaliu93',
-    },
     {
       id: nanoid(),
       name: 'linkedin',
@@ -79,6 +74,16 @@ export const footerData = {
       id: nanoid(),
       name: 'github',
       url: 'https://github.com/eliu925',
+    },
+    {
+      id: nanoid(),
+      name: 'envelope',
+      url: 'mailto:eliu925@gmail.com',
+    },
+    {
+      id: nanoid(),
+      name: 'medium',
+      url: 'https://medium.com/@ericaliu93',
     },
   ],
 };
