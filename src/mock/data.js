@@ -21,37 +21,46 @@ export const aboutData = {
   paragraphOne: '',
   paragraphTwo: '',
   paragraphThree: '',
-  resume: '', // if no resume, the button will not show up
+  resume: 'https://drive.google.com/file/d/1nTtGp1FJ3m77FbJAHsH1cqkq72m5ffyk/view?usp=sharing', // if no resume, the button will not show up
 };
 
 // PROJECTS DATA
 export const projectsData = [
   {
     id: nanoid(),
-    img: 'project.jpg',
-    title: '',
+    img: 'cookstarslogo.png',
+    title: 'Cookstars',
+    info:
+      'A mobile recipe application built on React Native utilizing the Expo framework, Firebase, Spoonacular API.',
+    info2:
+      'For our final project, we wanted to challenge ourselves by creating a mobile application using technologies we&apos;ve never used before. I designed and implemented multiple screens, aiming to give users a fun and seamless experience.',
+    info3:
+      'I designed and implemented multiple screens, aiming to give users a fun and seamless experience. I also worked on Firebase scheduling and pulling data from our Spoonacular API. ',
+    url: 'https://www.youtube.com/watch?v=rRqkGQzqI6w',
+    repo: 'https://github.com/CookStars/cookstarsapp', // if no repo, the button will not show up
+  },
+
+  {
+    id: nanoid(),
+    img: '',
+    title: 'Bubble Destroyer',
     info: '',
-    info2: '',
+    info2:
+      'During the 3-day hackathon, I helped design the game environment and implemented game controls and key mechanics of the original game such as collision between different object groups.',
     url: '',
-    repo: 'https://github.com/cobidev/react-simplefolio', // if no repo, the button will not show up
+    repo: 'https://github.com/Team-Bubble-Destroyers/BubbleDestroyer', // if no repo, the button will not show up
   },
   {
     id: nanoid(),
-    img: 'project.jpg',
-    title: '',
-    info: '',
-    info2: '',
+    img: 'GameShopper.png',
+    title: 'GameShopper',
+    info: 'An e-commerce website created with React, Redux, Express and Sequelize.',
+    info2:
+      'The first web application I ever created. I worked alongside 3 other developers and we utilized the technologies we learned to create a website from scratch. GameShopper allows users to browse through the selection of boardgames and cardgames. Users can also add multiple items to their cart.',
+    info3:
+      'Through pair programming, I worked on designing and implementing the shopping cart functions, routing, and testing.  ',
     url: '',
-    repo: 'https://github.com/cobidev/react-simplefolio', // if no repo, the button will not show up
-  },
-  {
-    id: nanoid(),
-    img: 'project.jpg',
-    title: '',
-    info: '',
-    info2: '',
-    url: '',
-    repo: 'https://github.com/cobidev/react-simplefolio', // if no repo, the button will not show up
+    repo: 'https://github.com/wdf-2004-grace-shopper-team-h/grace-shopper', // if no repo, the button will not show up
   },
 ];
 

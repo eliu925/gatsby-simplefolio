@@ -39,13 +39,16 @@ const Header = () => {
               Software Engineer.
               <Typing.Delay ms={800} />
               <Typing.Backspace count={18} />
-              Veterinary Technician.
+              Veterinary Nurse.
               <Typing.Delay ms={800} />
-              <Typing.Backspace count={22} />
+              <Typing.Backspace count={17} />
               Noodle Enthusiast.
               <Typing.Delay ms={800} />
               <Typing.Backspace count={18} />
-              Terrible Gamer.
+              Terrible Gamer.{' '}
+              <span role="img" aria-label="emoji">
+                😞
+              </span>
               <Typing.Delay ms={500} />
             </span>
           </h1>

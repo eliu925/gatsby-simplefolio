@@ -28,7 +28,7 @@ const Projects = () => {
         <div className="project-wrapper">
           <Title title="Projects" />
           {projects.map((project) => {
-            const { title, info, info2, url, repo, img, id } = project;
+            const { title, info, info2, info3, url, repo, img, id } = project;
 
             return (
               <Row key={id}>
@@ -43,29 +43,36 @@ const Projects = () => {
                     <div className="project-wrapper__text">
                       <h3 className="project-wrapper__text-title">{title || 'Project Title'}</h3>
                       <div>
-                        <p>
-                          {info ||
-                            'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi neque, ipsa animi maiores repellendu distinctioaperiam earum dolor voluptatum consequatur blanditiis inventore debitis fuga numquam voluptate architecto itaque molestiae.'}
-                        </p>
+                        {info || (
+                          <p>
+                            <a href="https://www.miniclip.com/games/bubble-trouble/en/">
+                              {' '}
+                              Bubble Trouble{' '}
+                            </a>{' '}
+                            clone created with Phaser 3 framework.
+                          </p>
+                        )}
                         <p className="mb-4">{info2 || ''}</p>
+                        <p className="mb-4">{info3 || ''}</p>
                       </div>
-                      <a
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="cta-btn cta-btn--hero"
-                        href={url || '#!'}
-                      >
-                        See Live
-                      </a>
-
+                      {url && (
+                        <a
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="cta-btn cta-btn--hero"
+                          href={url || '#!'}
+                        >
+                          <i className={`fa fa-video-camera || 'refresh'} fa-inverse`} /> Video
+                        </a>
+                      )}
                       {repo && (
                         <a
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="cta-btn text-color-main"
+                          className="cta-btn cta-btn--hero"
                           href={repo}
                         >
-                          Source Code
+                          <i className={`fa fa-github || 'refresh'} fa-inverse`} /> Source Code
                         </a>
                       )}
                     </div>
@@ -100,7 +107,14 @@ const Projects = () => {
                           }}
                         >
                           <div data-tilt className="thumbnail rounded">
-                            <ProjectImg alt={title} filename={img} />
+                            {img ? (
+                              <ProjectImg alt={title} filename={img} />
+                            ) : (
+                              <img
+                                src="https://media.giphy.com/media/YNDsUQU9KGpcvuPXoc/giphy.gif"
+                                alt="HTML5"
+                              />
+                            )}
                           </div>
                         </Tilt>
                       </a>
